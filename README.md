@@ -12,3 +12,10 @@ jk-mbp2017:rn-notifications jay$ /Applications/Xcode.app/Contents/Developer/usr/
 Xcode 11.3.1
 Build version 11C504
 ```
+
+I'll get some Android info after I have iOS up and running.
+
+## The Recipe
+```
+$ npx react-native init NotifyApp
+$ cd Notify app
