@@ -23,3 +23,9 @@ $ npx react-native init NotifyApp
 $ cd NotifyApp
 $ yarn add react-native-notifications
 ```
+
+Open `ios/NotifyApp.xcworkspace` in Xcode and do the following:
+
+1. Change the bundle id to `com.heynow.NotifyApp` (was `org.reactjs.native.example.NotifyApp`)
+2. Assign the team to 'Heynow Software'
+3. Add the 'Push Notifications' Capability

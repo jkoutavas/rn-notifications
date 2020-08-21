@@ -56,6 +56,7 @@
 		2D02E4901E0B4A5D006451C7 /* NotifyApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NotifyApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0ED3A69CFCB67639440E4A /* Pods-NotifyApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NotifyApp-tvOSTests/Pods-NotifyApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57ECC570DDAD6769FAAB9DFD /* Pods-NotifyApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotifyApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NotifyApp-tvOS/Pods-NotifyApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		69F9B27F24F01AC400C768C7 /* NotifyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = NotifyApp.entitlements; path = NotifyApp/NotifyApp.entitlements; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NotifyApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A602DC7AB6BB8DE4F77F50AA /* libPods-NotifyApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotifyApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF27D6B0706B2E71E15B78A /* libPods-NotifyApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotifyApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +126,7 @@
 		13B07FAE1A68108700A75B9A /* NotifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				69F9B27F24F01AC400C768C7 /* NotifyApp.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +196,6 @@
 				4A0ED3A69CFCB67639440E4A /* Pods-NotifyApp-tvOSTests.debug.xcconfig */,
 				F010AF1EADEA83972760F4D6 /* Pods-NotifyApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +295,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = RFE485QN84;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -655,7 +657,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NotifyApp/NotifyApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RFE485QN84;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NotifyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -664,7 +668,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.NotifyApp;
 				PRODUCT_NAME = NotifyApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -678,7 +682,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = NotifyApp/NotifyApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RFE485QN84;
 				INFOPLIST_FILE = NotifyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -686,7 +692,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.NotifyApp;
 				PRODUCT_NAME = NotifyApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
