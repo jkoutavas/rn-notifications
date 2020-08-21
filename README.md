@@ -29,4 +29,4 @@ Open `ios/NotifyApp.xcworkspace` in Xcode and do the following:
 
 1. Change the bundle id to `com.heynow.NotifyApp` (was `org.reactjs.native.example.NotifyApp`)
 2. Assign the team to 'Heynow Software'
-3. Add the 'Push Notifications' Capability
+3. Add the 'Push Notifications' Capability and the 'Background Modes' Cabality with the 'Remote notifications' checked
