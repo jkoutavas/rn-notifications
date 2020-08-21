@@ -24,9 +24,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import PushNotificationManager from './PushNotifications';
+
 const App: () => React$Node = () => {
   return (
-    <>
+    <PushNotificationManager>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -68,7 +70,7 @@ const App: () => React$Node = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
+    </PushNotificationManager>
   );
 };
 
