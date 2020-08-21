@@ -6,10 +6,10 @@ Just building this with whatever's currently installed on my personal dev MacBoo
 ```
 $ node --version
 v13.10.1
-$ pod --version
-1.9.1
 $ yarn --version
 1.22.4
+$ pod --version
+1.9.1
 $ /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -version
 Xcode 11.3.1
 Build version 11C504
@@ -22,6 +22,7 @@ I'll get some Android info after I have iOS up and running.
 $ npx react-native init NotifyApp
 $ cd NotifyApp
 $ yarn add react-native-notifications
+$ pod install --project-directory=ios/
 ```
 
 Open `ios/NotifyApp.xcworkspace` in Xcode and do the following:
