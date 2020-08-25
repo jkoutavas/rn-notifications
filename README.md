@@ -2,7 +2,11 @@
 
 *README last updated August 25th, 2020*
 
-An example React native app to explore best practices for integrating remote notifications for iOS and Android.
+An example React Native app to explore best practices for integrating remote notifications for iOS and Android.
+
+In this example I make reference to [Heynow Software](https://www.heynow.com), that's my consultancy shop.
+
+## Common recipe
 
 The common recipe for both platforms is:
 
