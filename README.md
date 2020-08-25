@@ -29,6 +29,8 @@ Build version 11C504
 ```
 
 ### The iOS Recipe
+After doing the common recipe listed above, execute this command:
+
 ```
 $ pod install --project-directory=ios/
 ```
