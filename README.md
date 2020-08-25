@@ -51,9 +51,4 @@ I'm working with Android Studio v3.5.3.
 ### The Android Recipe
 I had to tweak the `app/build.gradle` file to get the app to build on Android Studio v3.5.3 + React Native v0.63.2
 
-![](Build.gradle-diff.png)
-
-
-
-
-
+![](build.gradle-diff.png)
