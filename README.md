@@ -58,3 +58,8 @@ I then:
 
 1. Changed Android applicationId from "com.notifyapp" to "com.heynow.NotifyApp (getting ready to integrate Firebase messaging) [commit](https://github.com/jkoutavas/rn-notifications/commit/4accb385fbeb2143dd34ef9cd29b4835c00cc95d)
 2. Did react-native-notifications package integration along with google-services [commit](https://github.com/jkoutavas/rn-notifications/commit/58d832911e568b470badf33a6d19ab0abeab42cc)
+3. I created a `google-services.json` file from Heynow's Firebase Console and included it at `NotifyApp/android/app`
+
+### Testing FCM remote notifications
+
+Launching the app from Android Studio or using `npx react-native run-android` brings up the app and the FCM registration token is displayed in the console. I follow the instructions [here](https://firebase.google.com/docs/cloud-messaging/android/first-message) to send a message to this specific device. It works.
