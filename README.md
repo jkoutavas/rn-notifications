@@ -49,6 +49,12 @@ Using the old tried and true [Certificate-Based Connection to APNs](https://deve
 I'm working with Android Studio v3.5.3.
 
 ### The Android Recipe
-I had to tweak the `app/build.gradle` file to get the app to build on Android Studio v3.5.3 + React Native v0.63.2
+I had to tweak the `app/build.gradle` file to get the app to build on Android Studio v3.5.3 + React Native v0.63.2 
+[commit](16eaecf8c93069e9005d2b13b38a8b548cb74892):
 
 ![](build.gradle-diff.png)
+
+I then:
+
+1. Changed Android applicationId from "com.notifyapp" to "com.heynow.NotifyApp (getting ready to integrate Firebase messaging) [commit](4accb385fbeb2143dd34ef9cd29b4835c00cc95d)
+2. Did react-native-notifications package integration along with google-services [commit](58d832911e568b470badf33a6d19ab0abeab42cc)
