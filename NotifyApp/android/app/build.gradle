@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.notifyapp"
+        applicationId "com.heynow.NotifyApp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
