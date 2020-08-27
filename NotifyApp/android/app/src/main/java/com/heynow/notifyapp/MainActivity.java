@@ -1,4 +1,4 @@
-package com.notifyapp;
+package com.heynow.notifyapp;
 
 import com.facebook.react.ReactActivity;
 

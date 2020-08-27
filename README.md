@@ -1,6 +1,6 @@
 # rn-notifications
 
-*README last updated August 25th, 2020*
+*README last updated August 27th, 2020*
 
 An example React Native app to explore best practices for integrating remote notifications for iOS and Android.
 
@@ -12,10 +12,14 @@ The common recipe for both platforms is:
 
 ```
 $ npx react-native init NotifyApp
+$ npx react-native-rename NotifyApp2 -b com.heynow.notifyapp
+$ npx react-native-rename NotifyApp -b com.heynow.notifyapp
 $ cd NotifyApp
 $ yarn add react-native-notifications
 ```
 At this writing, this will produce a React Native v0.63.2 app.
+
+The two calls to `react-native-rename` are done so as to get a proper bundle identifer (iOS) / package name+applicationID (Android). The default application ID is simply `com.notifyapp`. Gone are the days where you could have done this: `react-native init NotifyApp -package com.heynow.notifyapp`
 
 ## iOS setup
 Just building this with whatever's currently installed on my personal dev MacBook Pro running Mojave 10.14.6.
@@ -39,7 +43,7 @@ After doing the common recipe listed above, execute this command:
 $ pod install --project-directory=ios/
 ```
 
-Open `ios/NotifyApp.xcworkspace` in Xcode and do the following:
+I then opened `ios/NotifyApp.xcworkspace` in Xcode and do the following:
 
 1. Change the bundle id to `com.heynow.NotifyApp` (was `org.reactjs.native.example.NotifyApp`)
 2. Assign the team to 'Heynow Software'
@@ -62,9 +66,8 @@ I had to tweak the `app/build.gradle` file to get the app to build on Android St
 
 I then:
 
-1. Changed Android applicationId from "com.notifyapp" to "com.heynow.NotifyApp (getting ready to integrate Firebase messaging) [commit](https://github.com/jkoutavas/rn-notifications/commit/4accb385fbeb2143dd34ef9cd29b4835c00cc95d)
-2. Did react-native-notifications package integration along with google-services [commit](https://github.com/jkoutavas/rn-notifications/commit/58d832911e568b470badf33a6d19ab0abeab42cc)
-3. I created a `google-services.json` file from Heynow's Firebase Console and included it at `NotifyApp/android/app`
+1. Did react-native-notifications package integration along with google-services [commit](https://github.com/jkoutavas/rn-notifications/commit/58d832911e568b470badf33a6d19ab0abeab42cc)
+2. I created a `google-services.json` file from Heynow's Firebase Console and included it at `NotifyApp/android/app`
 
 ### Testing FCM remote notifications
 

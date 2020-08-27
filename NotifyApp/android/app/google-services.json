@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "701173866234",
+    "firebase_url": "https://rn-notifyapp.firebaseio.com",
+    "project_id": "rn-notifyapp",
+    "storage_bucket": "rn-notifyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701173866234:android:b203239b8751a12b9bb343",
+        "android_client_info": {
+          "package_name": "com.heynow.NotifyApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701173866234-s1rlfh7ap6c3meai4bq1970vbg0apiqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDl4NgDNfziwXnKFKDt5yuG7WL5CxKlj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701173866234-s1rlfh7ap6c3meai4bq1970vbg0apiqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
