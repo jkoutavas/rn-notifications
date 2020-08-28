@@ -56,7 +56,7 @@ I tried using [pu.sh](https://github.com/tsif/pu.sh/blob/master/pu.sh) to test s
 Using the old tried and true [Certificate-Based Connection to APNs](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns) works just fine. I used the handy [Pusher](https://github.com/noodlewerk/NWPusher) tool to send notifications to the app. `Pusher` can be brew installed: `brew cask install pusher`
 
 ## Android setup
-I'm working with Android Studio v3.5.3 running on macOS.
+I'm working with Android Studio v3.5.3 running on macOS. This project also builds on Android Studio 4.0.1.
 
 ### The Android Recipe
 I had to tweak the `app/build.gradle` file to get the app to build on Android Studio v3.5.3 + React Native v0.63.2 
