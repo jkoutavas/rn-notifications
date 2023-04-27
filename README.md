@@ -10,11 +10,11 @@ In this example I make reference to [Heynow Software](https://www.heynow.com), t
 
 The common recipe for both platforms is:
 
-```
+```bash
 $ npx react-native init NotifyApp
+$ cd NotifyApp
 $ npx react-native-rename NotifyApp2 -b com.heynow.notifyapp
 $ npx react-native-rename NotifyApp -b com.heynow.notifyapp
-$ cd NotifyApp
 $ yarn add react-native-notifications
 ```
 At this writing, this will produce a React Native v0.63.2 app.
@@ -24,7 +24,7 @@ The two calls to `react-native-rename` are done so as to get a proper bundle ide
 ## iOS setup
 Just building this with whatever's currently installed on my personal dev MacBook Pro running Mojave 10.14.6.
 
-```
+```bash
 $ node --version
 v13.10.1
 $ yarn --version
@@ -39,7 +39,7 @@ Build version 11C504
 ### The iOS Recipe
 After doing the common recipe listed above, execute this command:
 
-```
+```bash
 $ pod install --project-directory=ios/
 ```
 
