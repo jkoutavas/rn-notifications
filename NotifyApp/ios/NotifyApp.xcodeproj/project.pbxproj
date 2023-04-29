@@ -489,6 +489,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NotifyApp/NotifyApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RFE485QN84;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NotifyApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotifyApp;
@@ -502,7 +503,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.notifyapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.NotifyApp;
 				PRODUCT_NAME = NotifyApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -518,6 +519,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NotifyApp/NotifyApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RFE485QN84;
 				INFOPLIST_FILE = NotifyApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NotifyApp;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,7 +532,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.notifyapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heynow.NotifyApp;
 				PRODUCT_NAME = NotifyApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
